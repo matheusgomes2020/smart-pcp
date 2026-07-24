@@ -1,94 +1,95 @@
-
 # Requisitos Funcionais
 
-## Pedidos
+## RF001 - Integração
 
-RF001 - Pesquisar pedido.
+RF001 - Importar pedidos do ERP Delta.
 
-RF002 - Visualizar informações do pedido.
+RF002 - Importar clientes.
 
-RF003 - Visualizar cliente.
+RF003 - Importar produtos.
 
-RF004 - Visualizar status.
+RF004 - Importar Ordens de Fabricação (OF).
 
-RF005 - Visualizar prazo.
+RF005 - Importar estrutura dos produtos (componentes).
 
-RF006 - Visualizar observações.
+RF006 - Importar apontamentos da produção.
 
----
+RF007 - Importar informações de estoque.
 
-## Itens
+RF008 - Importar informações de compras.
 
-RF007 - Listar itens do pedido.
-
-RF008 - Visualizar OF.
-
-RF009 - Visualizar quantidade.
-
-RF010 - Visualizar estrutura.
-
-RF011 - Visualizar componentes.
-
-RF012 - Visualizar histórico.
+RF009 - Atualizar automaticamente as informações importadas.
 
 ---
 
-## Componentes
+## RF010 - Consulta
 
-RF013 - Visualizar componentes fabricados.
+RF010 - Pesquisar pedido.
 
-RF014 - Visualizar componentes comprados.
+RF011 - Pesquisar cliente.
 
-RF015 - Visualizar chapas.
+RF012 - Pesquisar OF.
 
-RF016 - Visualizar perfis.
+RF013 - Pesquisar produto.
 
-RF017 - Visualizar insumos.
+RF014 - Pesquisar componente.
 
-RF018 - Visualizar estoque.
+RF015 - Visualizar pedido completo em uma única tela.
 
----
+RF016 - Visualizar estrutura do item.
 
-## Produção
+RF017 - Visualizar cronograma da OF.
 
-RF019 - Visualizar cronograma.
+RF018 - Visualizar histórico de apontamentos.
 
-RF020 - Visualizar etapas.
+RF019 - Visualizar materiais pendentes.
 
-RF021 - Visualizar apontamentos.
+RF020 - Visualizar compras relacionadas.
 
-RF022 - Visualizar tempo parado.
-
-RF023 - Visualizar previsão.
-
-RF024 - Visualizar realizado.
-
-RF025 - Visualizar operador.
+RF021 - Visualizar disponibilidade em estoque.
 
 ---
 
-## Compras
+## RF022 - PCP
 
-RF026 - Visualizar fornecedor.
+RF022 - Calcular prioridade dos pedidos.
 
-RF027 - Visualizar pedido de compra.
+RF023 - Identificar pedidos críticos.
 
-RF028 - Visualizar chegada prevista.
+RF024 - Identificar OFs paradas.
 
-RF029 - Visualizar chegada realizada.
+RF025 - Identificar gargalos.
 
-RF030 - Visualizar pendências.
+RF026 - Exibir previsão de conclusão.
+
+RF027 - Destacar riscos de atraso.
+
+RF028 - Permitir observações do PCP.
 
 ---
 
-## Dashboard
+## RF029 - Dashboards
 
-RF031 - Dashboard executivo.
+RF029 - Dashboard executivo.
 
-RF032 - Dashboard PCP.
+RF030 - Dashboard do PCP.
 
-RF033 - Dashboard Produção.
+RF031 - Dashboard da Produção.
 
-RF034 - Dashboard Compras.
+RF032 - Dashboard de Compras.
 
-RF035 - Dashboard Estoque.
+RF033 - Dashboard de Estoque.
+
+---
+
+## RF034 - Inteligência
+
+RF034 - Sugerir prioridades.
+
+RF035 - Detectar possíveis atrasos.
+
+RF036 - Identificar materiais críticos.
+
+RF037 - Exibir tempo parado.
+
+RF038 - Gerar indicadores de desempenho.
