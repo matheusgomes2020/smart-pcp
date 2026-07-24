@@ -1,35 +1,70 @@
+# Regras de Negócio
 
-RN001 - Todo pedido pertence a um cliente.
+## Origem dos Dados
 
-RN002 - Um pedido pode possuir diversos itens.
+RN001 - O ERP Delta é a fonte oficial dos dados.
 
-RN003 - Todo item pertence a apenas um pedido.
+RN002 - O SmartPCP não substitui o ERP.
 
-RN004 - Todo item possui uma Ordem de Fabricação.
+RN003 - O SmartPCP utiliza informações sincronizadas do ERP.
 
-RN005 - Um item pode possuir diversos componentes.
+RN004 - Alterações cadastrais devem ser realizadas exclusivamente no ERP.
 
-RN006 - Componentes podem ser classificados como:
+---
+
+## Pedidos
+
+RN005 - Todo pedido pertence a um cliente.
+
+RN006 - Um pedido possui um ou mais itens.
+
+RN007 - Cada item possui exatamente uma Ordem de Fabricação.
+
+RN008 - Uma Ordem de Fabricação pertence a apenas um item.
+
+---
+
+## Produtos
+
+RN009 - Cada item referencia um produto cadastrado no ERP.
+
+RN010 - Um produto possui uma estrutura composta por componentes.
+
+RN011 - Um componente pode ser utilizado em diversos produtos.
+
+RN012 - Componentes podem ser classificados como:
 - Fabricado
 - Comprado
 - Insumo
 - Chapa
 - Perfil
 
-RN007 - Apenas componentes fabricados possuem etapas produtivas.
+---
 
-RN008 - Componentes comprados possuem fornecedor.
+## Produção
 
-RN009 - Componentes comprados possuem previsão de entrega.
+RN013 - Apenas componentes fabricados possuem etapas produtivas.
 
-RN010 - Componentes podem estar disponíveis em estoque.
+RN014 - Cada etapa pode possuir diversos apontamentos.
 
-RN011 - Uma OP pode possuir diversos apontamentos.
+RN015 - O andamento da produção é determinado pelos apontamentos.
 
-RN012 - Cada apontamento pertence a apenas uma etapa.
+---
 
-RN013 - Uma etapa possui data prevista e data realizada.
+## Compras
 
-RN014 - Um pedido é considerado atrasado quando a previsão ultrapassa a data de entrega.
+RN016 - Componentes comprados podem atender diversas OFs.
 
-RN015 - A prioridade pode ser calculada considerando prazo, cliente, tempo parado e status.
+RN017 - O estoque controla apenas matérias-primas e itens comprados.
+
+RN018 - Peças fabricadas não são controladas como estoque.
+
+---
+
+## PCP
+
+RN019 - A prioridade é calculada pelo SmartPCP.
+
+RN020 - O SmartPCP pode gerar previsões utilizando informações do ERP.
+
+RN021 - O SmartPCP pode armazenar observações próprias do PCP sem alterar os dados do ERP.
