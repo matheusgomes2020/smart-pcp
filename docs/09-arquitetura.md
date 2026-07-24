@@ -1,21 +1,24 @@
-Delta ERP
+              ERP Delta
+         (Fonte Oficial)
 
-↓
+                 │
+         ETL / Integração
 
-ETL (Python)
+                 │
+          Banco SmartPCP
 
-↓
+                 │
 
-PostgreSQL
+        Regras de Negócio
 
-↓
+                 │
 
-FastAPI
+        API (FastAPI)
 
-↓
+                 │
 
-React
+    React / Power BI
 
-↓
+                 │
 
-Power BI
+      Usuários (PCP)
